@@ -1,3 +1,4 @@
 alias ls="ls -Gh"
 alias ll="ls -l"
 alias la="ls -A"
+alias cdl="cdandlist"

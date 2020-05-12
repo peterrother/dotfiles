@@ -17,6 +17,9 @@ shopt -s checkwinsize
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
+# Load functions if they exist.
+[ -f "$HOME/.bash_functions" ] && source "$HOME/.bash_functions"
+
 # Load aliases if they exist.
 [ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
 
