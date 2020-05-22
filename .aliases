@@ -2,10 +2,7 @@
 alias ls="ls -Gh"
 alias ll="ls -l"
 alias la="ls -A"
-function cs() {
-        cd $1
-        ll
-}
+alias cs="cdandlist"
 
 # Radio Stations
 # FM4 (Alternates: 185.85.28.141, 185.85.29.141, 185.85.29.144)
