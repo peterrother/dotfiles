@@ -1,6 +1,7 @@
 # File System
 alias ls="ls -Gh"
 alias ll="ls -l"
+alias la="ls -A"
 function cs() {
         cd $1
         ll
