@@ -1,3 +1,11 @@
+# File System
 alias ls="ls -Gh"
 alias ll="ls -l"
-alias la="ls -A"
+function cs() {
+        cd $1
+        ll
+}
+
+# Radio Stations
+# FM4 (Alternates: 185.85.28.141, 185.85.29.141, 185.85.29.144)
+alias fm4="/usr/local/bin/mpg123 -C --title --utf8 --buffer 1024 --preload 0.1 --no-resync --timeout 10 http://185.85.28.144:8000"
