@@ -14,6 +14,9 @@ shopt -s histappend
 # Ensure $LINES and $COLUMNS always get updated.
 shopt -s checkwinsize
 
+# Do not blindly execute historical commands with !, !!, and !?
+shopt -s histverify
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
