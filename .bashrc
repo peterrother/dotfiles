@@ -20,6 +20,11 @@ shopt -s histverify
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
+# Set up Python environment using pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
 # Load functions if they exist.
 [ -f "$HOME/.bash_functions" ] && source "$HOME/.bash_functions"
 
